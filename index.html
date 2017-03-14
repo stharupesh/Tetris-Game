@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+			Tetris By Rupesh Babu Shrestha - 2015/01/15
+		</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body>
+	  	<div id="header">
+	  		<h1> Tetris By Rupesh Babu Shrestha - 2015/01/15 </h1>
+	    	<div id="score-controls">
+	    	  <table id="menu">
+			    <tr>
+				  <td>Level :</td>
+				  <td>
+				  	<select id="speed">
+				  		<option value="300">1</option>
+				  		<option value="250">2</option>
+				  		<option value="200">3</option>
+				  		<option value="150">4</option>
+				  		<option value="100">5</option>
+				  	</select>
+				  </td>
+				  <td> <button id="play" onclick="start()">Play</button> </td>
+				  <td> <button id="play" onclick="restart()">Restart</button> </td>
+				  <td> Score : </td>
+				  <td> <input type = "text" id = "score" value = "0"/> </td>
+				  <td> <button onclick="controlsInfo()">Controls</button> </td>
+				</tr>
+			  </table>
+	  		</div>
+	  	</div>
+
+	  	<br/>
+
+	  	<div id = "pixelMap"></div>
+	  	<div id = "pixelMapOutline"></div>
+
+		<script src="js/tetris.js"></script>
+	</body>
+</html>
